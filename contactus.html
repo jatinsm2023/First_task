@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <style>
+       *{
+        margin: 0px;
+        padding: 0px;
+        
+       }
+       body{
+        
+        height: 100vh;
+
+        background-color: rgb(248, 255, 255);
+       }
+       html{
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+       .container{
+        border: solid;
+        min-width: 40%;
+        width: fit-content;
+        display: block;
+        text-align: center;
+        margin: auto;
+        background-color: white;
+        margin-top: 100px;
+        border-radius: 23px;
+       
+       }
+       .container h1{
+        margin: 30px;
+       }
+       form{
+      
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 40px;
+       }
+       input{
+        border: solid;
+        width: 40vh;
+        height: 30px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 23px;
+       }
+       textarea{
+        border: solid;
+        resize: vertical;
+        width: 40vh;
+        height: 100px;
+        border-radius: 23px;
+        padding: 10px;
+        margin: 10px;
+       }
+       input[type="submit"]{
+        width: 6rem;
+        padding: 0px;
+        background-color: green;
+    }
+    input[type="reset"]{
+        background-color: red;
+           padding: 0px;
+        width: 6rem;
+       }
+       .social a img{
+       margin-top: 20px;
+        width: 50px;
+        height: 50px;
+       }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+
+        <h1>CONTACT US</h1>
+        
+    
+        <!-- for our social media handles-->
+        <div class="social">
+
+            <!-- adding facebook link with its image -->
+            <a href="https://facebook.com" target = "_blank"><img src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png" width = "35px" height = "35px" alt="fb"></a> 
+            
+            <!-- adding instagram link with its image -->
+            <a href="https://instagram.com" target = "_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png"  width = "35px" height = "35px"  alt="insta"></a> 
+        
+            <!-- adding linked In link with its image -->
+            <a href="https://linkedin.com" target = "_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width = "35px" height = "35px" alt="linkedin"></a> 
+        
+            <!-- adding twitter In link with its image -->
+            <a href="https://twitter.com" target = "_blank"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" width = "35px" height = "35px"  alt="twitter"></a>
+        
+        </div>
+    
+        <!--form-->
+        <form action="#">
+        
+                <label for="Name"></label>
+                <input type="text" name = "myname" id = "Name" placeholder="Your Name" required>
+                <br>
+                <label for="Email"></label>
+                <input type="email" name="myemail" id="Email" placeholder="Your Email" required>
+            <br>
+                <label for="mess"></label>
+                <textarea name="mymess" id="mess" cols="50" rows="3" placeholder="Your Message" required></textarea>
+            <br>
+                <input type="submit" value= "SUBMIT">
+                <input type="reset" value="RESET">
+        
+        </form>
+    </div>
+</body>
+</html>
